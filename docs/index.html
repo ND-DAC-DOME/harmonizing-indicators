@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Maps existing business-relevant indicators to Standard U.S. Foreign Assistance Indicators."
+    />
+    <title>Private Sector Engagement - Indicator Search</title>
+
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="css/hi.css" />
+  </head>
+
+  <body class="d-flex flex-column h-100">
+    <header>
+      <div class="bg-dark">
+        <div class="container" id="top-container">
+          <div class="row mt-3 mb-2 align-items-center">
+            <div class="col-md-4 col-lg-3">
+              <h1 id="hi-title" class="my-0 text-vlt-grn">
+                Private Sector<br /><span>Engagement</span>
+              </h1>
+              <h5
+                id="hi-tagline"
+                class="mt-0 mb-0 text-soft fw-light fst-italic text-md-end"
+              >
+                Harmonizing Development and Business Indicators
+              </h5>
+            </div>
+            <div class="col-md-8 col-lg-9">
+              <p class="p-inst text-soft mt-2 mb-0 d-none d-md-block">
+                This tool maps existing business-relevant indicators to Standard
+                U.S. Foreign Assistance Indicators. Use the tool to better
+                understand partner motivations, recognize common monitoring
+                needs, and identify engagement opportunities. Use the filters
+                and/or search to explore indicators for a specific sector or
+                business theme.
+              </p>
+              <p id="hi-miss" class="mt-2 mb-0 d-none d-md-block">
+                <b>What Did We Miss?</b> We welcome feedback and suggestions for
+                new SPSD-Business indicator linkages,
+                <b
+                  ><a
+                    href="https://docs.google.com/forms/d/1XZDu95Tk5yTp7AWW1TKaIKoIu4qkKVHa86GXZsm28U0/edit"
+                    target="_blank"
+                    rel="noopener"
+                    >using this form</a
+                  ></b
+                >.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main role="main" class="flex-grow-1">
+      <div class="wash-200">
+        <div class="container-fluid py-4 mb-4">
+          <div class="row g-2 align-items-center" id="filter-row">
+            <div class="col" id="filter-spsd-categories"></div>
+            <div class="col" id="filter-program-areas"></div>
+            <div class="col" id="filter-business-objectives"></div>
+            <div class="col" id="filter-business-sources"></div>
+            <div class="col" id="filter-sdg-goals"></div>
+            <div class="col text-center text-md-start">
+              <a
+                class="btn btn-light btn-sm rounded-pill ms-2 mt-2 mt-md-1 text-small"
+                href="#"
+                role="button"
+                id="reset_button"
+                title="Reset filters"
+                ><i class="fas fa-redo"></i> Reset</a
+              >
+            </div>
+          </div>
+
+          <div class="row pt-3 justify-content-center">
+            <div class="col-sm-12 col-lg-8">
+              <div class="input-group">
+                <button
+                  class="btn btn-outline-secondary"
+                  id="clear-search-btn"
+                  type="button"
+                  title="Clear search"
+                >
+                  <i class="fas fa-times"></i>
+                </button>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="search-phrase-input"
+                  placeholder="Search by phrase... (press Enter to search)"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-outline-secondary"
+                  id="search-phrase-btn"
+                  type="button"
+                  title="Search"
+                >
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid" id="results">
+        <p class="stats-line">Loading indicators&hellip;</p>
+      </div>
+
+      <div class="container my-4">
+        <h4>About the Harmonizing Development and Business Indicators tool</h4>
+        <p>
+          To better foster private sector engagement with joint monitoring and
+          mutual understanding of the results each party aims to achieve, this
+          tool highlights existing alignment between U.S. Standard Foreign
+          Assistance Indicators and indicators that are relevant for business
+          reporting commitments by sector and industry. The tool is based on the
+          Foreign Assistance Framework
+          <a href="https://www.state.gov/f/c24132.htm" target="_blank" rel="noopener"
+            >Standardized Program Structure and Definitions</a
+          >
+          (SPSD), a listing of program categories that provides common
+          definitions for the use of foreign assistance funds, around which the
+          majority of U.S. foreign assistance programming is organized and
+          standard indicators are defined.
+          <br /><br />
+          Businesses are increasingly interested in measuring socio-economic
+          impact because of the link to business success. Numerous
+          environmental, social, and governance (ESG) frameworks have emerged
+          over the last two decades to help investors and companies alike in the
+          measurement of their company or portfolio performance, including the
+          Global Reporting Initiative (GRI), SASB and IRIS+, which is a product
+          of the Global Impact Investing Network (GIIN). These and other
+          frameworks help companies to identify business-relevant indicators in
+          such areas as health, energy, labor and economic growth.
+          <br /><br />
+          This tool was designed for a primary audience of USAID internal,
+          technical officers involved in private sector engagement and
+          associated results monitoring. Click
+          <a
+            href="https://docs.google.com/document/d/1qLTmzAUyret063mKkNVDEZKt_63z8loWE_YFK5oNjEA/edit"
+            target="_blank"
+            rel="noopener"
+            >here</a
+          >
+          to learn more about how this tool was developed.
+        </p>
+      </div>
+    </main>
+
+    <footer class="footer mt-auto bg-dark">
+      <div class="wash-200">
+        <div class="container-fluid">
+          <div class="row py-4">
+            <div class="col-lg-3 desc-col text-center text-lg-start">
+              <p class="my-0 text-muted pb-4 pb-lg-0">
+                This work is a partnership between USAID, the University of Notre
+                Dame, and Purdue University. It is funded under grant
+                #AID-7200AA18CA00009.
+              </p>
+            </div>
+            <div class="col-lg-9">
+              <div class="row brand-line align-items-center">
+                <div class="col-sm-3 py-3">
+                  <a href="https://www.usaid.gov" target="_blank" rel="noopener">
+                    <img
+                      src="images/usaid-logo.png"
+                      class="img-fluid img-65"
+                      alt="USAID logo"
+                    />
+                  </a>
+                </div>
+                <div class="col-sm-3 py-3">
+                  <a
+                    href="https://stemedhub.org/groups/laserpulse/aboutus"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img
+                      src="images/purdue-laser-pulse.png"
+                      class="img-fluid img-65"
+                      alt="Purdue LASER PULSE logo"
+                    />
+                  </a>
+                </div>
+                <div class="col-sm-3 py-3">
+                  <a href="https://www.nd.edu" target="_blank" rel="noopener">
+                    <img
+                      src="images/nd_mark_blue.png"
+                      class="img-fluid img-50"
+                      alt="Notre Dame logo"
+                    />
+                  </a>
+                </div>
+                <div class="col-sm-3 py-3">
+                  <a href="https://www.purdue.edu" target="_blank" rel="noopener">
+                    <img
+                      src="images/purdue.png"
+                      class="img-fluid img-50"
+                      alt="Purdue logo"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row py-3 cpy-line">
+          <div class="col-md-6">
+            <p class="text-white-50 mb-0 text-center text-md-start">
+              Copyright © 2020
+              <a class="text-reset" href="https://www.nd.edu">University of Notre Dame</a>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p class="text-white-50 mb-0 text-center text-md-end">
+              <a class="text-reset" href="https://pulte.nd.edu"
+                >Pulte Institute for Global Development</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
